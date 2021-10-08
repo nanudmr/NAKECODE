@@ -1,0 +1,109 @@
+.herobox{
+    background-image: url(/imgs/nk-bg-mb.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 48px;
+    .innerhero{
+
+        .heroContent{
+            margin-left: 10px;
+            margin-right: 10px;
+        h1{
+            font-size: 48px;
+            font-weight: bold;
+            font-family: "Raleway", sans-serif;
+            line-height: 56px;
+        }
+        p{
+            margin-top: 24px;
+        }
+
+        button{
+            margin-top: 64px;
+            padding: 12px 32px;
+            background-color: #1D1D1F;
+            border: none;
+            border-radius: 4px;
+            a{
+                font-family: "montserrat", sans-serif;
+                font-size: 16px;
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+
+        }
+        
+
+
+    }
+    .heroImg{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .herobox{
+        background-image: url(/imgs/hero-mid-bg.jpg);
+
+        .innerhero{
+
+            padding-top: 168px;
+            padding-bottom: 168px;
+            display: flex;
+            justify-content: space-between;
+            .heroContent{
+                flex: 50%;
+                margin-left: 40px;
+                h1{
+                    max-width: 360px;
+                }
+                p{
+                    max-width: 360px;
+                }
+            }
+            .heroImg{
+                flex: 50%;
+                margin-right: 40px;
+                display: block;
+                img{
+                    max-width: 100%;
+                    transform: translateY(15%);
+                }
+            }
+
+        }
+
+    }
+}
+
+
+@media only screen and (min-width: 1160px){
+      .herobox{
+          background-image: url(/imgs/desktop-hero-bg.jpg);
+          max-height: 736px;
+          .innerhero{
+            max-width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+            .heroContent{
+                h1{
+                    max-width: 560px;
+                }
+                p{
+                    max-width: 560px;
+                }
+            }
+            .heroImg{
+                img{
+                    max-width: 100%;
+                    transform: translateY(-10%);
+                }
+          }
+
+        }
+      }
+  }

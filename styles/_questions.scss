@@ -1,0 +1,112 @@
+.faqSection{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: url(/imgs/faq-cont-bg-mb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .faqContent{
+        margin-left: 10px;
+        margin-right: 10px;
+
+        h5{
+            font-size: 32px;
+            font-family: "raleway", sans-serif;
+            font-weight: 600;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        .questions{
+            margin-top: 32px;
+            
+
+            .question{
+                margin-bottom: 32px;
+
+            }
+
+            .accordion{
+                border: none;
+                outline: none;
+                font-size: 18px;
+                font-family: "montserrat", sans-serif;
+                text-align: start;
+                background-color: #ffffff;
+                width: 100%;
+                display: inline-block;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 12px;
+                border-radius: 4px;
+            }
+            .answer{
+                margin-top: 8px;
+                margin-bottom: 16px;
+                font-family: "montserrat", sans-serif;
+                display: none;
+                max-width: 570px;
+            }
+
+            .questions1{
+                max-width: 570px;
+            }
+            .questions2{
+                max-width: 570px;
+            }
+            
+
+        }
+    }
+}
+
+@media only screen and(min-width: 768px){
+    .faqSection{
+        background: url(/imgs/faq-cont-bg-mid.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .faqContent{
+            max-width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .questions{
+                margin-left: 40px;
+                margin-right: 40px;
+
+                .questions1{
+                    max-width: 100%;
+
+                }
+
+                .questions2{
+                    display: block;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1160px){
+    .faqSection{
+        background: url(/imgs/desktop-footer-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .faqContent{
+            .questions{
+                display: flex;
+                margin-left: 0px;
+                margin-right: 0px;
+                justify-content: space-between;
+                .question{
+                    width: 560px;
+                }
+            }
+        }
+    }
+}

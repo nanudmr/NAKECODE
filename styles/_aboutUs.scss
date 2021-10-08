@@ -1,0 +1,77 @@
+.aboutUs{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-image: url(/imgs/aboutUs-bg-.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .aboutContent{
+        margin-left: 10px;
+        margin-right: 10px;
+        h1{
+            font-family: "raleway", sans-serif;
+            font-size: 48px;
+            line-height: 56px;
+        }
+        p{
+            margin-top: 24px;
+            line-height: 22px;
+        }
+
+        img{
+            margin-top: 48px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .aboutUs{
+        padding-top: 96px;
+        padding-bottom: 96px;
+        background-image: url(/imgs/about-mid-bg.png);
+        .aboutContent{
+            margin-left: 40px;
+            margin-right: 40px;
+            display: flex;
+            justify-content: space-between;
+            .aboutText{
+                flex: 50%;
+                p{
+                    font-size: 18px;
+                    line-height: 22px;
+                    max-width: 361px;
+                }
+            }
+            img{
+                display: none;
+            }
+
+            .midImg{
+                flex: 50%;
+                img{
+                    display: block;
+                    margin-top: 0px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1160px){
+    .aboutUs{
+        background-image: url(/imgs/desktop-AboutUs-bg.jpg);
+        .aboutContent{
+            max-width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+            .aboutText{
+                p{
+                    max-width: 560px;
+                }
+            }
+        }
+    }
+}
