@@ -1,8 +1,6 @@
 nav{
     
     background-color: #1D1D1F;
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 100;
 
@@ -81,6 +79,8 @@ nav{
         .navContent{
             margin-left: 0px;
             margin-right: 0px;
+            display: flex;
+            justify-content: space-between;
 
             .logo{
                 margin-left: 10px;
