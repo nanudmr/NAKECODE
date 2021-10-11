@@ -1,5 +1,5 @@
 --
 deployment:
   tasks:
-    - export DEPLOYPATH=/home4/repositories/NAKECODE/
+    - export DEPLOYPATH=/home4/nakecode/public_html/
     - /bin/cp * $DEPLOYPATH
