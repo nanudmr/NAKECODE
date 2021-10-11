@@ -57,6 +57,10 @@ table {
 
 nav {
   background-color: #1D1D1F;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 nav .navContent {
@@ -100,22 +104,39 @@ nav .navContent .menu {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .navContent .menu a {
   text-decoration: none;
   color: #ffffff;
-  margin-left: 48px;
+  margin-left: 64px;
 }
 
 nav .navContent .menu hr {
   display: none;
 }
 
+nav .navContent .menu .header-btn button {
+  margin-left: 64px;
+  font-size: 14px;
+  font-family: "montserrat", sans-serif;
+  line-height: 17px;
+  padding: 5px 20px;
+}
+
 @media screen and (max-width: 1140px) {
   nav .navContent {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  nav .navContent .logo {
+    -webkit-box-flex: 5%;
+        -ms-flex: 5%;
+            flex: 5%;
+    max-width: 55px;
   }
 }
 
@@ -161,8 +182,6 @@ nav .navContent .menu hr {
     background-color: #1D1D1F;
     display: none;
     font-size: 18px;
-    -webkit-transition: opacity 2.5s ease-in;
-    transition: opacity 2.5s ease-in;
   }
   nav .navContent .menu li {
     margin-top: 32px;
@@ -194,6 +213,7 @@ nav .navContent .menu hr {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     border-radius: 4px;
+    margin-left: 0px;
   }
 }
 

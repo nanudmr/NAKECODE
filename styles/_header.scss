@@ -1,6 +1,10 @@
 nav{
     
     background-color: #1D1D1F;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 
     .navContent{
         display: flex;
@@ -28,15 +32,26 @@ nav{
             flex: 70%;
             display: flex;
             justify-content: flex-end;
+            align-items: center;
 
             a{
                 text-decoration: none;
                 color: #ffffff;
-                margin-left: 48px;
+                margin-left: 64px;
             }
 
             hr{
                 display: none;
+            }
+
+            .header-btn{
+                button{
+                    margin-left: 64px;
+                    font-size: 14px;
+                    font-family: "montserrat", sans-serif;
+                    line-height: 17px;
+                    padding: 5px 20px;
+                }
             }
             
 
@@ -49,8 +64,12 @@ nav{
 
     nav{ 
         .navContent{
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 40px;
+            margin-right: 40px;
+            .logo{
+                flex: 5%;
+                max-width: 55px;
+            }
         }
     }
 }
@@ -92,8 +111,6 @@ nav{
                 background-color: #1D1D1F;
                 display: none;
                 font-size: 18px;
-                
-                transition: opacity 2.5s ease-in;
 
                 li{
                     margin-top: 32px;
@@ -129,6 +146,7 @@ nav{
                         font-family: 'Montserrat', sans-serif;
                         font-weight: 400;
                         border-radius: 4px;
+                        margin-left: 0px;
                     }
 
                 }
