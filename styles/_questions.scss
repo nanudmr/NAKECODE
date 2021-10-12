@@ -24,7 +24,11 @@
 
             .question{
                 margin-bottom: 32px;
-
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 12px;
+                border-radius: 4px;
+                background-color: #ffffff;
             }
 
             .accordion{
@@ -36,17 +40,15 @@
                 background-color: #ffffff;
                 width: 100%;
                 display: inline-block;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                padding-left: 12px;
-                border-radius: 4px;
+
             }
             .answer{
-                margin-top: 8px;
+                margin-top: 16px;
                 margin-bottom: 16px;
                 font-family: "montserrat", sans-serif;
                 display: none;
                 max-width: 570px;
+                background-color: #ffffff;
             }
 
             .questions1{
