@@ -252,9 +252,6 @@ nav .navContent .menu .header-btn button {
   background-color: #1D1D1F;
   border: none;
   border-radius: 4px;
-}
-
-.herobox .innerhero .heroContent button a {
   font-family: "montserrat", sans-serif;
   font-size: 16px;
   color: #ffffff;
@@ -836,6 +833,124 @@ footer .info:nth-child(2) {
   footer .info:nth-child(2) {
     margin-top: 0px;
   }
+}
+
+.myModal .modal-content {
+  background-color: #FAFAFA;
+}
+
+.myModal .modal-header {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: none;
+  padding: 0px;
+}
+
+.myModal h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  margin-top: 20px;
+  line-height: 19px;
+}
+
+.myModal h4 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "raleway", sans-serif;
+  display: inline-block;
+  margin-top: 12px;
+  line-height: 33px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.myModal .btn-close {
+  margin-left: auto;
+  margin-right: 16px;
+  margin-top: 16px;
+}
+
+.myModal .modal-footer {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.myModal .modal-footer .info {
+  display: inline-block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myModal .modal-footer .info img {
+  max-width: 32px;
+  margin-right: 12px;
+}
+
+.myModal .form p {
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.myModal .form input {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "montserrat", sans-serif;
+  padding: 8px 12px;
+  border: none;
+}
+
+.myModal .form textarea {
+  width: 100%;
+  font-size: 14px;
+  font-family: "montserrat", sans-serif;
+  padding: 8px 12px;
+  border: none;
+}
+
+.myModal .form .name {
+  margin-bottom: 16px;
+}
+
+.myModal .form .email {
+  margin-bottom: 16px;
+}
+
+.myModal .form .message {
+  margin-bottom: 32px;
+}
+
+.myModal .form .sendBtn button {
+  width: 100%;
+  background-color: #1D1D1F;
+  padding: 12px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
 }
 
 body {
