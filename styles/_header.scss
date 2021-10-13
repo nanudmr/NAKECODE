@@ -13,7 +13,9 @@ nav{
         min-height: 44px;
 
         .logo{
-            flex: 30%;
+            flex: 30%; 
+            display: flex;
+            justify-content: center;
             img{
                 max-height: 24px;
             }
@@ -97,6 +99,8 @@ nav{
             .menuOpener{
                 margin-right: 10px;
                 display: block;
+                display: flex;
+                justify-content: center;
                 img{
                     max-height: 20px;
                 }

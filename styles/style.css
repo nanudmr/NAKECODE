@@ -78,6 +78,12 @@ nav .navContent .logo {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav .navContent .logo img {
@@ -166,6 +172,12 @@ nav .navContent .menu .header-btn button:hover {
   nav .navContent .menuOpener {
     margin-right: 10px;
     display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   nav .navContent .menuOpener img {
     max-height: 20px;
