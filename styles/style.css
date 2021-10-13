@@ -224,7 +224,7 @@ nav .navContent .menu .header-btn button {
 }
 
 .herobox {
-  background-image: url(./imgs/nk-bg-mb.jpg);
+  background-image: url(/imgs/nk-bg-mb.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,7 +266,7 @@ nav .navContent .menu .header-btn button {
 
 @media only screen and (min-width: 600px) {
   .herobox {
-    background-image: url(./imgs/hero-mid-bg.jpg);
+    background-image: url(/imgs/hero-mid-bg.jpg);
   }
   .herobox .innerhero {
     padding-top: 168px;
@@ -306,7 +306,7 @@ nav .navContent .menu .header-btn button {
 
 @media only screen and (min-width: 1160px) {
   .herobox {
-    background-image: url(./imgs/desktop-hero-bg.jpg);
+    background-image: url(/imgs/desktop-hero-bg.jpg);
     max-height: 736px;
   }
   .herobox .innerhero {
