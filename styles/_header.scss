@@ -14,8 +14,6 @@ nav{
 
         .logo{
             flex: 30%; 
-            display: flex;
-            justify-content: center;
             img{
                 max-height: 24px;
             }
@@ -95,6 +93,8 @@ nav{
 
             .logo{
                 margin-left: 10px;
+                display: flex;
+                justify-content: center;
             }
             .menuOpener{
                 margin-right: 10px;
