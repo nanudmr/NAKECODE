@@ -248,7 +248,7 @@ nav .navContent .menu .header-btn button:hover {
 }
 
 .herobox {
-  background-image: url(/imgs/nk-bg-mb.jpg);
+  background-image: url(/imgs/mobile-img/nk-bg-mb.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -290,7 +290,7 @@ nav .navContent .menu .header-btn button:hover {
 
 @media only screen and (min-width: 600px) {
   .herobox {
-    background-image: url(/imgs/hero-mid-bg.jpg);
+    background-image: url(/imgs/tablet-img/hero-mid-bg.webp);
   }
   .herobox .innerhero {
     padding-top: 168px;
@@ -330,7 +330,7 @@ nav .navContent .menu .header-btn button:hover {
 
 @media only screen and (min-width: 1160px) {
   .herobox {
-    background-image: url(/imgs/desktop-hero-bg.jpg);
+    background-image: url(/imgs/desktop-img/desktop-hero-bg.webp);
     max-height: 736px;
   }
   .herobox .innerhero {
@@ -402,6 +402,7 @@ main .services .service p {
 
 main .services .service img {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -441,7 +442,7 @@ main .services .service img {
 .aboutUs {
   padding-top: 64px;
   padding-bottom: 64px;
-  background-image: url(/imgs/aboutUs-bg-mb.jpg);
+  background-image: url(/imgs/mobile-img/aboutUs-bg-mb.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -473,7 +474,7 @@ main .services .service img {
   .aboutUs {
     padding-top: 96px;
     padding-bottom: 96px;
-    background-image: url(/imgs/about-mid-bg.png);
+    background-image: url(/imgs/tablet-img/about-mid-bg.webp);
   }
   .aboutUs .aboutContent {
     margin-left: 40px;
@@ -512,7 +513,7 @@ main .services .service img {
 
 @media only screen and (min-width: 1160px) {
   .aboutUs {
-    background-image: url(/imgs/desktop-AboutUs-bg.jpg);
+    background-image: url(/imgs/desktop-img/desktop-AboutUs-bg.webp);
   }
   .aboutUs .aboutContent {
     max-width: 1160px;
@@ -600,7 +601,7 @@ main .services .service img {
 .faqSection {
   padding-top: 64px;
   padding-bottom: 64px;
-  background: url(/imgs/faq-cont-bg-mb.jpg);
+  background: url(/imgs/mobile-img/footer-mb.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,5 +1,5 @@
 .herobox{
-    background-image: url(/imgs/nk-bg-mb.jpg);
+    background-image: url(/imgs/mobile-img/nk-bg-mb.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,10 +45,9 @@
 
 @media only screen and (min-width: 600px) {
     .herobox{
-        background-image: url(/imgs/hero-mid-bg.jpg);
+        background-image: url(/imgs/tablet-img/hero-mid-bg.webp);
 
         .innerhero{
-
             padding-top: 168px;
             padding-bottom: 168px;
             display: flex;
@@ -81,7 +80,7 @@
 
 @media only screen and (min-width: 1160px){
       .herobox{
-          background-image: url(/imgs/desktop-hero-bg.jpg);
+          background-image: url(/imgs/desktop-img/desktop-hero-bg.webp);
           max-height: 736px;
           .innerhero{
             max-width: 1160px;
