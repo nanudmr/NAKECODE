@@ -123,6 +123,8 @@ nav .navContent .menu .header-btn button {
   font-family: "montserrat", sans-serif;
   line-height: 17px;
   padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 1140px) {
