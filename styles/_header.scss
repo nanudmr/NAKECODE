@@ -13,7 +13,7 @@ nav{
         min-height: 44px;
 
         .logo{
-            flex: 30%; 
+            flex: 30%;
             img{
                 max-height: 24px;
             }
@@ -34,8 +34,12 @@ nav{
 
             a{
                 text-decoration: none;
-                color: #ffffff;
+                color: #d2d2d7;
                 margin-left: 64px;
+                font-size: 14px;
+                &:hover {
+                    color: #ffffff;
+                }
             }
 
             hr{
@@ -51,6 +55,9 @@ nav{
                     padding: 5px 20px;
                     border: none;
                     border-radius: 4px;
+                    &:hover{
+                        background-color: #ffffff;
+                    }
                 }
             }
             
@@ -121,7 +128,10 @@ nav{
 
                     a{
                         margin-left: 0px;
-                        color: #ffffff;
+                        color: #d2d2d7;
+                        &:hover {
+                            color: #ffffff;
+                        }
                     }
 
                 }
