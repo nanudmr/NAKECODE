@@ -76,5 +76,16 @@ for (i = 0; i < acc.length; i++) {
 
 
 
+// MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL 
+
+const modalMail = document.getElementById("modalMail")
+const mailSent = document.getElementById("mailSent")
+
+function emailSent(){
+  modalMail.style.display = "none"
+  mailSent.style.display = "block"
+}
 
 
+
+// MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL 

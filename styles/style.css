@@ -987,6 +987,29 @@ footer .info:nth-child(2) {
   border-radius: 4px;
 }
 
+.myModal .mailSent {
+  display: none;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.myModal .mailSent p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #2ECFAA;
+  text-align: center;
+  margin-top: 16px;
+  line-height: 21px;
+}
+
+.myModal .mailSent img {
+  max-width: 64px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   line-height: 20px;
