@@ -12,5 +12,5 @@ if(isset($_POST['submit'])){
 
     mail($mailTo, $subject, $txt, $headers);
 
-    header("Location: ./index.html?#contactUs");
+    header('Location: '.$_SERVER['PHP_SELF']);
 }

@@ -78,6 +78,12 @@ nav .navContent .logo {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .navContent .logo img {
