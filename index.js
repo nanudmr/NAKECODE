@@ -86,6 +86,21 @@ function emailSent(){
   mailSent.style.display = "block"
 }
 
-
-
 // MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL 
+
+// FOOTER MAIL FOOTER MAIL FOOTER MAIL FOOTER MAIL
+
+
+const formFooter = document.getElementById("formFooter")
+const mailSentFooter = document.getElementById("mailSentFooter")
+
+function emailSentFooter(){
+  formFooter.style.display = "none"
+  mailSentFooter.style.display = "block"
+}
+
+
+
+
+
+// FOOTER MAIL FOOTER MAIL FOOTER MAIL FOOTER MAIL

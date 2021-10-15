@@ -806,6 +806,29 @@ main .services .service img {
   background-color: #6000FF;
 }
 
+.footerContent .mailSentFooter {
+  display: none;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.footerContent .mailSentFooter p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #2ECFAA;
+  text-align: center;
+  margin-top: 16px;
+  line-height: 21px;
+}
+
+.footerContent .mailSentFooter img {
+  max-width: 64px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   margin-left: 10px;
   margin-right: 10px;

@@ -301,11 +301,11 @@
             <h4>Get a free web analysis</h4>
 
 
-            <div id="contactUs" class="contactUs">
+            <div class="contactUs">
 
-                <div class="form">
+                <div id="formFooter" class="form">
 
-                    <form action="contact.php" method="POST">
+                    <form onsubmit="emailSentFooter()" action="contact.php" method="POST">
                         <div class="info">
                             <div class="name">
                                 <p>Name:</p>
@@ -327,6 +327,11 @@
                         </div>
                     </form>
 
+                </div>
+
+                <div id="mailSentFooter" class="mailSentFooter">
+                    <img src="/imgs/checkMsg.webp" alt="">
+                    <p>Your message has been sent</p>
                 </div>
 
 
