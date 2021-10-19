@@ -78,6 +78,9 @@ nav .navContent .logo {
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
           flex: 30%;
+}
+
+nav .navContent .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
