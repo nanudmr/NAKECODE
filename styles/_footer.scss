@@ -1,7 +1,9 @@
-.footerContent{
+.contactUs{
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 128px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #FAFAFA;
     h5{
         font-family: "raleway", sans-serif;
         font-size: 18px;
@@ -111,10 +113,18 @@
 }
 
 footer{
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 64px;
-    padding-bottom: 96px;
+    background: url(/imgs/mobile-img/footer-mb-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .footerContent{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 32px;
+        padding-bottom: 96px;
+    }
+
     .info{
         display: flex;
         align-items: center;
@@ -130,16 +140,32 @@ footer{
 }
 
 .end{
-    padding-bottom: 12px;
-    max-width: 1160px;
-    margin-left: auto;
-    margin-right: auto;
-    p{
-        margin-top: 12px;
+    background-color: #FAFAFA;
+    .endContent{
+        padding-bottom: 12px;
+        max-width: 1160px;
+        margin-left: 10px;
+        margin-right: 10px;
+        hr{
+            height: 1px;
+            margin: 0;
+        }
+        p{
+            margin-top: 12px;
+        }
     }
 }
 
 @media only screen and(min-width: 768px){
+
+    .finalbg{
+        background: url(/imgs/tablet-img/finalbg-mid-bg.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
     .footerContent{
         h5{
             font-size: 32px;
@@ -152,22 +178,91 @@ footer{
             text-align: center;
             line-height: 49px;
         }
-        .contactUs{
+    }
+
+    .contactUs{
+        padding-top: 64px;
+        background: none;
+
+        .contactUsContent{
             max-width: 492px;
             margin-left: auto;
             margin-right: auto;
+
+            .form{
+                .info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .email{
+                        margin-top: 0px;
+                    }
+                }
+
+                .message{
+                    textarea{
+                        max-height: 50px;
+                    }
+                }
+
+            }
+
         }
     }
 
     footer{
-        display: flex;
-        max-width: 492px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: space-between;
+        background: none;
+        .footerContent{
+            display: flex;
+            max-width: 492px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: space-between;
+            background: #fafafa00;
+        }
 
         .info:nth-child(2){
             margin-top: 0px;
         } 
+    }
+
+}
+
+
+@media only screen and(min-width: 1160px){
+    .finalbg{
+        background: url(/imgs/desktop-img/finalbg-lg-bg.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+        .contactUs{
+            h5{
+                font-size: 32px;
+                line-height: 38px;
+            }
+            h4{
+                margin-top: 24px;
+                font-size: 42px;
+                line-height: 49px;
+            }
+
+            .contactUsContent{
+                max-width: 560px;
+            }
+        }
+    }
+
+
+    .end{
+        .endContent{
+            margin-left: auto;
+            margin-right: auto;
+            hr{
+                color: #1D1D1F;
+            }
+        }
     }
 }
