@@ -99,8 +99,56 @@ function emailSentFooter(){
   mailSentFooter.style.display = "block"
 }
 
-
-
-
-
 // FOOTER MAIL FOOTER MAIL FOOTER MAIL FOOTER MAIL
+
+
+// GSAP  GSAP GSAP GSAP GSAP GSAP GSAP GSAP GSAP 
+
+// gsap.from(".primeraImg",{
+//   scrollTrigger: {
+//     trigger: ".primeraImg",
+//     start: "center bottom"
+//   },
+//   x: 200,
+//   duration: 2
+// })
+// gsap.from(".segundaImg",{
+//   scrollTrigger: {
+//     trigger: ".segundaImg",
+//     start: "center bottom"
+//   },
+//   x: 200,
+//   duration: 2
+// })
+// gsap.from(".terceraImg",{
+//   scrollTrigger: {
+//     trigger: ".terceraImg",
+//     start: "center bottom"
+//   },
+//   x: 200,
+//   duration: 2
+// })
+
+let tl = gsap.timeline({
+  scrollTrigger:{
+    trigger: ".primeraImg",
+    start: "top bottom"
+  }
+})
+
+tl.from(".primeraImg", {
+  x:200,
+  opacity:0,
+  duration: 1
+})
+tl.from(".segundaImg",{
+  x:200,
+  opacity:0,
+  duration: 1
+})
+tl.from(".terceraImg", {
+  x:200,
+  opacity:0,
+  duration:1
+})
+

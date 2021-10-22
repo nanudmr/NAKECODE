@@ -20,9 +20,45 @@
             line-height: 22px;
         }
 
-        img{
+
+
+        .midImg{
+            height: 83.2vw;
+            max-height: 477px;
+            position: relative;
             margin-top: 48px;
-            max-width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+            .primeraImg{
+                position: absolute;
+                margin-left: 17.85%;
+                img{
+                    max-width: 100%;
+                    border-radius: 8px;
+                }
+            }
+            .segundaImg{
+                position: absolute;
+                margin-left: 8.92%;
+                margin-top: 14.25%;
+                margin-right: 8.92%;
+                img{
+                    max-width: 100%;
+                    border-radius: 8px;
+                }
+            }
+            .terceraImg{
+                position: absolute;
+                margin-right: 17.85%;
+                margin-top: 28.51%;
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    border-radius: 8px;
+                }
+            }
+            // Las tarjetas al tener que utilizar position absolute y tener que crecer respectivamente al tamaño de la pantalla sin salirse del recuadro tuvieron que utilizar las medidas en % y en vw.
         }
     }
 }
