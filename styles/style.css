@@ -300,6 +300,9 @@ nav .navContent .menu .header-btn button:hover {
 @media only screen and (min-width: 600px) {
   .herobox {
     background-image: url(/imgs/tablet-img/hero-mid-bg.webp);
+    max-height: 736px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .herobox .innerhero {
     padding-top: 168px;
@@ -327,27 +330,57 @@ nav .navContent .menu .header-btn button:hover {
     -webkit-box-flex: 50%;
         -ms-flex: 50%;
             flex: 50%;
-    margin-right: 40px;
     display: block;
+    padding-right: 40px;
+    position: relative;
+    max-height: 446px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .herobox .innerhero .heroImg img {
-    max-width: 100%;
-    -webkit-transform: translateY(15%);
-            transform: translateY(15%);
+    -webkit-transform: none;
+            transform: none;
+  }
+  .herobox .innerhero .heroImg .laptop {
+    position: absolute;
+    margin-top: 56.41px;
+  }
+  .herobox .innerhero .heroImg .laptop img {
+    max-width: 360px;
+  }
+  .herobox .innerhero .heroImg .phone {
+    position: absolute;
+    margin-left: 258px;
+    margin-top: 77px;
+  }
+  .herobox .innerhero .heroImg .phone img {
+    max-width: 102.96px;
   }
 }
 
 @media only screen and (min-width: 1160px) {
   .herobox {
-    background-image: url(/imgs/desktop-img/desktop-hero-bg.webp);
+    background-image: none;
+    background-color: #FAFAFA;
     max-height: 736px;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(/imgs/herobox-imgs/bactrans-hero.png);
+    background-color: #FAFAFA;
+    background-repeat: no-repeat;
+    background-size: 1920px 977px;
+    background-position-y: 0px;
   }
   .herobox .innerhero {
     max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 145px;
+    padding-bottom: 145px;
   }
   .herobox .innerhero .heroContent {
+    margin-top: 71px;
     margin-left: 0px;
   }
   .herobox .innerhero .heroContent h1 {
@@ -356,13 +389,33 @@ nav .navContent .menu .header-btn button:hover {
   .herobox .innerhero .heroContent p {
     max-width: 560px;
   }
-  .herobox .innerhero .heroImg {
-    margin-right: 0px;
+  .herobox .innerhero .heroContent button:hover {
+    background-color: #6000FF;
   }
-  .herobox .innerhero .heroImg img {
-    max-width: 100%;
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+  .herobox .innerhero .heroImg {
+    min-height: 446px;
+    padding-right: 0px;
+    position: relative;
+  }
+  .herobox .innerhero .heroImg .laptop {
+    margin-top: 0px;
+    position: absolute;
+    right: 0;
+  }
+  .herobox .innerhero .heroImg .laptop img {
+    max-width: 560px;
+    -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.4));
+            filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.4));
+  }
+  .herobox .innerhero .heroImg .phone {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .herobox .innerhero .heroImg .phone img {
+    max-width: 160px;
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+            filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
   }
 }
 

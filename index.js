@@ -129,6 +129,24 @@ function emailSentFooter(){
 //   duration: 2
 // })
 
+// HEROBOX HEROBOX HEROBOX HEROBOX HEROBOX 
+
+// gsap.from(".laptop",{
+//   x:20,
+//   opacity:100,
+//   duration:2
+// })
+
+// gsap.from(".phone", {
+//   x:-100,
+//   opacity:20,
+//   duration:2
+// })
+
+
+
+// ABOUT SECTION ABOUT SECTION ABOUT SECTION 
+
 let tl = gsap.timeline({
   scrollTrigger:{
     trigger: ".primeraImg",

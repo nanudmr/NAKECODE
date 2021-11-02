@@ -46,6 +46,9 @@
 @media only screen and (min-width: 600px) {
     .herobox{
         background-image: url(/imgs/tablet-img/hero-mid-bg.webp);
+        max-height: 736px;
+        padding-top: 0px;
+        padding-bottom: 0px;
 
         .innerhero{
             padding-top: 168px;
@@ -64,11 +67,33 @@
             }
             .heroImg{
                 flex: 50%;
-                margin-right: 40px;
                 display: block;
+                padding-right: 40px;
+                position: relative;
+                // border: solid black 1px;
+                // height: 34.41vw;
+                max-height: 446px;
+                overflow-x: hidden;
+                overflow-y: hidden;
+
                 img{
-                    max-width: 100%;
-                    transform: translateY(15%);
+                    transform: none;
+                }
+               .laptop{
+                   position: absolute;
+                   margin-top: 56.41px;
+                   img{
+                       max-width: 360px;
+                   }
+               }
+
+               .phone{
+                   position: absolute;
+                   margin-left: 258px;
+                   margin-top: 77px;
+                   img{
+                       max-width: 102.96px;
+                   }
                 }
             }
 
@@ -80,13 +105,27 @@
 
 @media only screen and (min-width: 1160px){
       .herobox{
-          background-image: url(/imgs/desktop-img/desktop-hero-bg.webp);
+          background-image: none;
+          background-color: #FAFAFA;
           max-height: 736px;
+          z-index: 2;
+          overflow-x: hidden;
+          overflow-y: hidden;
+
+          background-image: url(/imgs/herobox-imgs/bactrans-hero.png);
+          background-color: #FAFAFA;
+          background-repeat: no-repeat;
+          background-size: 1920px 977px;
+          background-position-y: 0px;
+
           .innerhero{
             max-width: 1160px;
             margin-left: auto;
             margin-right: auto;
+            padding-top: 145px;
+            padding-bottom: 145px;
             .heroContent{
+                margin-top: 71px;
                 margin-left: 0px;
                 h1{
                     max-width: 560px;
@@ -94,14 +133,34 @@
                 p{
                     max-width: 560px;
                 }
-            }
-            .heroImg{
-                img{
-                    max-width: 100%;
-                    transform: translateY(-10%);
+                button:hover{
+                    background-color: #6000FF;
                 }
-                margin-right: 0px;
-          }
+            }
+
+            .heroImg{
+                min-height: 446px;
+                padding-right: 0px;
+                position: relative;
+                .laptop{
+                    margin-top: 0px;
+                    position: absolute;
+                    right: 0;
+                    img{
+                        max-width: 560px;
+                        filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.400));
+                    }
+                }
+                .phone{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    img{
+                        max-width: 160px;
+                        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+                    }
+                }
+            }
 
         }
       }
