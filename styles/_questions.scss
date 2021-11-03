@@ -16,61 +16,37 @@
             font-weight: 600;
             line-height: 38px;
             text-align: center;
+            margin-bottom: 56px;
         }
 
-        .questions{
-            margin-top: 56px;
-            
 
-            .question{
-                margin-bottom: 32px;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                padding-left: 12px;
-                border-radius: 4px;
-                background-color: #ffffff;
-            }
+        .accordion-item{
+            margin-top: 32px;
+            border-bottom: 0px;
+        }
 
-            .questionFinal{
-                padding-top: 8px;
-                padding-bottom: 8px;
-                padding-left: 12px;
-                border-radius: 4px;
-                background-color: #ffffff;
-            }
-
-            .accordion{
-                border: none;
-                outline: none;
+        .accordion-button{
+            padding: 12px 8px;
+            p{
                 font-size: 18px;
+                font-family: "montserrat", sans-serif;
+                font-weight: 500;
                 line-height: 22px;
-                font-family: "montserrat", sans-serif;
-                color: black;
-                text-align: start;
-                background-color: #ffffff;
-                width: 100%;
-                display: inline-block;
-                max-width: 295px;
-
             }
-            .answer{
-                margin-top: 16px;
-                margin-bottom: 16px;
-                font-family: "montserrat", sans-serif;
-                display: none;
-                max-width: 570px;
-                background-color: #ffffff;
-            }
-
-            .questions1{
-                max-width: 570px;
-            }
-            .questions2{
-                max-width: 570px;
-            }
-            
 
         }
+        .accordion-button:not(.collapsed){
+            color: black;
+            background-color: white;
+        }
+    }
+
+    .accordion-button:focus{
+        box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed)::after{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     }
 }
 
@@ -83,29 +59,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         .faqContent{
-            max-width: 1160px;
-            margin-left: auto;
-            margin-right: auto;
-
-            .questions{
-                margin-top: 64px;
-                margin-left: 40px;
-                margin-right: 40px;
-
-                .questions1{
-                    max-width: 100%;
-
-                }
-
-                .accordion{
-                    max-width: 690px;
-                }
-
-                .questions2{
-                    display: block;
-                    max-width: 100%;
-                }
-            }
+            margin-left: 40px;
+            margin-right: 40px;
         }
     }
 }
@@ -118,15 +73,29 @@
         background-size: cover;
         background-repeat: no-repeat;
         .faqContent{
-            .questions{
-                display: flex;
-                margin-left: 0px;
-                margin-right: 0px;
-                justify-content: space-between;
-                .question{
-                    width: 560px;
-                }
+            max-width: 1160px;
+            margin-left: auto;
+            margin-right: auto;
+
+            h5{
+                margin-bottom: 64px;
             }
+            .accordion{
+                display: flex;
+                justify-content: space-between;
+            }
+            .accordion-item{
+                width: 570px;
+            }
+            // .questions{
+            //     display: flex;
+            //     margin-left: 0px;
+            //     margin-right: 0px;
+            //     justify-content: space-between;
+            //     .question{
+            //         width: 560px;
+            //     }
+            // }
         }
     }
 }
