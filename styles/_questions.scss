@@ -68,10 +68,14 @@
 
 @media only screen and (min-width: 1160px){
     .faqSection{
-        background: url(/imgs/desktop-img/faq-lg-bg.webp);
-        background-position: center;
-        background-size: cover;
+    
+        background: url(/imgs/desktop-img/faq-desktop-bg.webp);
+        background-size: 1920px 512px;
         background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: -32px;
+
+        background-color: #fafafa;
         .faqContent{
             max-width: 1160px;
             margin-left: auto;
@@ -87,15 +91,6 @@
             .accordion-item{
                 width: 570px;
             }
-            // .questions{
-            //     display: flex;
-            //     margin-left: 0px;
-            //     margin-right: 0px;
-            //     justify-content: space-between;
-            //     .question{
-            //         width: 560px;
-            //     }
-            // }
         }
     }
 }
