@@ -99,7 +99,15 @@
 
 @media only screen and (min-width: 1160px){
     .aboutUs{
-        background-image: url(/imgs/desktop-img/desktop-AboutUs-bg.webp);
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        background-image: url(/imgs/desktop-img/desktop-about-bg-trans.webp);
+        background-color: #FAFAFA;
+        background-repeat: no-repeat;
+        background-size: 1920px 857px;
+        background-position-y: 0px;
+
         .aboutContent{
             max-width: 1160px;
             margin-left: auto;
