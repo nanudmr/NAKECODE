@@ -54,7 +54,6 @@ addContactForm.addEventListener("submit", (e) => {
         emailSentFooter()
         emailSent()
         addContactForm.reset()
-        console.log("hello")
     })
 
 })
@@ -66,6 +65,7 @@ const mailSentFooter = document.getElementById("mailSentFooter")
 function emailSentFooter(){
     formFooter.style.display = "none"
     mailSentFooter.style.display = "block"
+    console.log("hello")
 }
 
 // Modal Contact Form
@@ -76,6 +76,7 @@ const mailSent = document.getElementById("mailSent")
 function emailSent(){
   modalMail.style.display = "none"
   mailSent.style.display = "block"
+  console.log("hello")
 }
 
   

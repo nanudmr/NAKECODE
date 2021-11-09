@@ -82,3 +82,6 @@ tl.from(".terceraImg", {
   duration:1
 })
 
+
+
+console.log("hello")
