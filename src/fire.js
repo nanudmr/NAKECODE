@@ -38,25 +38,7 @@ getDocs(colRef)
 
 
 
-// adding documents
-const addContactForm = document.querySelector(".add")
-addContactForm.addEventListener("submit", (e) => {
-    e.preventDefault()
 
-    addDoc(colRef, {
-        to: "info@nakecode.com",
-        message: {
-            subject: "new contact request from nakecode.com",
-            html: `name: ${addContactForm.name.value} email: ${addContactForm.email.value} message: ${addContactForm.message.value}`
-        }
-    })
-    .then(() => {
-        emailSentFooter()
-        emailSent()
-        addContactForm.reset()
-    })
-
-})
 
 // change footer form to sent email
 const formFooter = document.getElementById("formFooter")
@@ -77,4 +59,43 @@ function emailSent(){
   mailSent.style.display = "block"
 }
 
-  
+
+// adding documents
+
+// FOOTER CONTACT FORM
+const addContactForm = document.querySelector(".add")
+addContactForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    addDoc(colRef, {
+        to: "info@nakecode.com",
+        message: {
+            subject: "new contact request from nakecode.com",
+            html: `name: ${addContactForm.name.value} email: ${addContactForm.email.value} message: ${addContactForm.message.value}`
+        }
+    })
+    .then(() => {
+        emailSentFooter()
+        addContactForm.reset()
+    })
+
+})
+
+// MODAL CONTACT FORM
+const addContactModal = document.getElementById("modalContact")
+
+addContactModal.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    addDoc(colRef, {
+        to: "info@nakecode.com",
+        message: {
+            subject: "new contact request from nakecode.com",
+            html: `name: ${addContactModal.name.value} email: ${addContactModal.email.value} message: ${addContactModal.message.value}`
+        }
+    })
+    .then(() => {
+        addContactModal.reset()
+        emailSent()
+    })
+})
