@@ -233,9 +233,11 @@ footer{
 @media only screen and(min-width: 1160px){
     .finalbg{
         background: url(/imgs/desktop-img/finalbg-lg-bg.webp);
-        background-size: cover;
-        background-position: center;
+        background-size: 1920px 666px;
+        background-color: #FAFAFA;
         background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 0px;
 
 
         .contactUs{
