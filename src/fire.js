@@ -54,6 +54,7 @@ addContactForm.addEventListener("submit", (e) => {
         emailSentFooter()
         emailSent()
         addContactForm.reset()
+        console.log("hello")
     })
 
 })
