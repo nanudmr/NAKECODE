@@ -26,29 +26,19 @@ menuCloser.addEventListener("click", function(){
 
 // CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL 
 
-var splide = new Splide( '.splide' );
-
-splide.mount();
-
-
-function carouselShow(x) {
-  if (x.matches) { 
-    let splide = new Splide( '.splide' );
-    splide.mount();
-  } else {
-    let splide = new Splide( '.splide', {
-      perPage: 3,
-      rewind : true,
-    } );
-    
-    splide.mount();
+var splide = new Splide( '.splide', {
+  perPage: 4,
+  breakpoints: {
+    640:{
+      perPage: 1,
+    },
+    1024: {
+      perPage: 3
+    }
   }
-}
 
-let space = window.matchMedia("(max-width: 809px)")
-carouselShow(space)
-space.addListener(carouselShow)
-
+} )
+splide.mount();
 
 // MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL 
 
