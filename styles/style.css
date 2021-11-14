@@ -706,6 +706,24 @@ main .services .service img {
   .portfolio {
     max-width: 1160px;
   }
+  .portfolio .portfolioContent {
+    margin-left: 0px;
+    margin-left: 0px;
+  }
+  .splide .splide__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .splide img {
+    max-width: 260px;
+  }
+  .splide .splide__slide {
+    max-width: 260px;
+  }
 }
 
 .faqSection {
