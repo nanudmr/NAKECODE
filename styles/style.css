@@ -895,6 +895,7 @@ main .services .service img {
   padding-left: 8px;
   font-family: "montserrat", sans-serif;
   font-size: 14px;
+  overflow: hidden;
 }
 
 .contactUs .form form .sendBtn {
