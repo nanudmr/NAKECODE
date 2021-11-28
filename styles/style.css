@@ -751,6 +751,10 @@ main .services .service img {
   margin-bottom: 56px;
 }
 
+.faqSection .faqContent a {
+  color: black;
+}
+
 .faqSection .faqContent .accordion-item {
   margin-top: 32px;
   border-bottom: 0px;
