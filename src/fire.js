@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app"
 import {
-    getFirestore, collection, getDocs,
-    addDoc
+    getFirestore, collection, addDoc
 } from "firebase/firestore"
 
 
@@ -22,22 +21,6 @@ const db = getFirestore()
 
 // collection ref
 const colRef = collection(db, "contacts")
-
-// get collection data
-
-getDocs(colRef)
-    .then((snapshot) => {
-        let contacts = []
-        snapshot.docs.forEach((doc) => {
-            contacts.push({ ...doc.data(), id: doc.id})
-        })
-    })
-    .catch(err => {
-        console.log(err.message)
-    })
-
-
-
 
 
 // change footer form to sent email
@@ -60,26 +43,7 @@ function emailSent(){
 }
 
 
-// adding documents
-
-// FOOTER CONTACT FORM
-const addContactForm = document.querySelector(".add")
-addContactForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-
-    addDoc(colRef, {
-        to: "info@nakecode.com",
-        message: {
-            subject: "new contact request from nakecode.com",
-            html: `name: ${addContactForm.name.value} email: ${addContactForm.email.value} message: ${addContactForm.message.value}`
-        }
-    })
-    .then(() => {
-        emailSentFooter()
-        addContactForm.reset()
-    })
-
-})
+// ADDING DOCUMENTS
 
 // MODAL CONTACT FORM
 const addContactModal = document.getElementById("modalContact")
@@ -98,4 +62,25 @@ addContactModal.addEventListener("submit", (e) => {
         addContactModal.reset()
         emailSent()
     })
+})
+
+
+// FOOTER CONTACT FORM
+const addContactForm = document.querySelector(".add")
+
+addContactForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    
+    addDoc(colRef, {
+        to: "info@nakecode.com",
+        message: {
+            subject: "new contact request from nakecode.com",
+            html: `name: ${addContactForm.name.value} email: ${addContactForm.email.value} message: ${addContactForm.message.value}`
+        }
+    })
+    .then(() => {
+        emailSentFooter()
+        addContactForm.reset()
+    })
+
 })

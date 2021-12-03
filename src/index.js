@@ -71,3 +71,5 @@ tl.from(".terceraImg", {
   opacity:0,
   duration:1
 })
+
+
