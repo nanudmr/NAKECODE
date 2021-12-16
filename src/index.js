@@ -49,24 +49,24 @@ splide.mount();
 
 // ABOUT SECTION ABOUT SECTION ABOUT SECTION 
 
-let tl = gsap.timeline({
+gsap.timeline({
   scrollTrigger:{
     trigger: ".primeraImg",
     start: "top bottom"
   }
 })
 
-tl.from(".primeraImg", {
+.from(".primeraImg", {
   x:200,
   opacity:0,
   duration: 1
 })
-tl.from(".segundaImg",{
+.from(".segundaImg",{
   x:200,
   opacity:0,
   duration: 1
 })
-tl.from(".terceraImg", {
+.from(".terceraImg", {
   x:200,
   opacity:0,
   duration:1
