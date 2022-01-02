@@ -1,0 +1,263 @@
+// DESKTOP
+
+.contact{
+    padding: 64px 0px 96px 0px;
+    background-color: $white-2;
+    position: relative;
+    overflow: hidden;
+
+    img[src="./homepage/sections/contact/images/moco-verde-4.webp"] {
+        position: absolute;
+        top: 50%;
+        left: -15%;
+        width: 520px;
+        z-index: 0;
+      }
+
+      img[src="./homepage/sections/contact/images/moco-verde-5.webp"] {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        width: 400px;
+        z-index: 0;
+      }
+
+      img[src="./homepage/sections/contact/images/astronaut.webp"] {
+        transform: scaleX(1) !important;
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        width: 160px;
+        z-index: 0;
+      }
+}
+
+.contact-content{
+    @include sectionWidth;
+
+    h3 {
+        @include thirdTitle;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    h4 {
+        @include secondaryTitle;
+        text-align: center;
+        padding-bottom: 64px;
+    }
+    
+    // FORM
+    
+    .contact-form{
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+
+        button {
+            background-color: $black;
+            border: none;
+            color: $white;
+            padding: 12px 0px 12px 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button:hover{
+            background-color: $purple;
+        }
+    }
+
+    .form-fields{
+        width: 100%;
+
+        .form-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input{
+            padding: 8px 12px 8px 12px;
+        }
+
+        .email{
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .name{
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .website{
+            p{
+                font-size: 14px;
+            }
+        }
+
+        .message{
+            p{
+                font-size: 14px;
+            }
+            textarea {
+                resize: none;
+                padding: 8px 12px 8px 12px;
+              }
+        }
+
+        p{
+            margin-bottom: 8px;
+        }
+    }
+
+    input{
+        width: 100%;
+        margin-bottom: 16px;
+        outline: none;
+        border: none;
+    }
+
+    textarea{
+        width: 100%;
+        margin-bottom: 42px;
+        outline:none;
+        border: none;
+    }
+
+    // FORM END
+
+    .contact-info{
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        
+        p{
+            font-size: 18px;
+            margin-left: 8px;
+        }
+
+        .our-email{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 32px;
+            }
+        }
+
+        .our-phone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 32px;
+            }
+        }
+    }
+}
+
+.mailSent{
+    display: none;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    p{
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        color: #2ECFAA;
+        text-align: center;
+        margin-top: 16px;
+    }
+    img{
+        max-width: 64px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// DESKTOP END
+
+// TABLET
+
+@media screen and (max-width:1200px){
+
+    .contact-content{
+      margin-left: 20px;
+      margin-right: 20px;
+      overflow: hidden;
+    }
+
+    img[src="./homepage/sections/contact/images/moco-verde-4.webp"] {
+        display: none;
+      }
+
+      img[src="./homepage/sections/contact/images/astronaut.webp"] {
+        display: none;
+      }
+}
+
+// TABLET END
+
+// MOBILE
+
+@media screen and (max-width:768px){
+
+    .contact{
+
+    
+        img[src="./homepage/sections/contact/images/moco-verde-4.webp"] {
+            display: none;
+          }
+    
+          img[src="./homepage/sections/contact/images/moco-verde-5.webp"] {
+            display: none;
+          }
+    
+          img[src="./homepage/sections/contact/images/astronaut.webp"] {
+            display: block;
+            position: absolute;
+            transform: scaleX(-1) !important;
+            top: 75%;
+            left: 70%;
+            width: 100px;
+            z-index: 0;
+          }
+    }
+
+    .contact-content{
+        h3 {
+            font-size: 24px
+
+        }
+
+        h4 {
+            font-size: 32px;
+        }
+
+        .form-flex{
+            flex-direction: column;
+        }
+    }
+
+    .contact-info{
+        flex-direction: column;
+        gap: 16px;
+        align-items:flex-start;
+    }
+
+}
+
+// MOBILE END

@@ -1,0 +1,71 @@
+// DESKTOP
+
+.portfolio {
+    padding: 96px 0px 96px 0px;
+}
+
+.portfolio-content {
+    @include sectionWidth;
+
+    h4 {
+        @include thirdTitle;
+        text-align: center;
+        padding-bottom: 48px;
+    }
+}
+
+// SPLIDE
+
+.splide{
+    .splide__slide{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 412px;
+    }
+    img{
+        max-width: 260px;
+        max-height: 320px;
+        border-radius: 4px;
+        @include boxShadow;
+        margin-top: 16px;
+    }
+
+    .splide__arrow{
+        display: none;
+    }
+
+    .splide__pagination button{
+        background-color: $midGrey;
+        opacity: 1;
+        width: 16px;
+        height: 16px;
+    }
+
+    .splide__pagination__page.is-active {
+        background: #fff;
+        transform: scale(1);
+        background-color: $black;
+    }
+
+    .splide__pagination li {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+// SPLIDE END
+
+// DESKTOP END
+
+// TABLET
+
+@media screen and (max-width:1200px){
+
+    .portfolio-content {
+      margin-left: 20px;
+      margin-right: 20px;
+      overflow: hidden;
+    }
+    
+}

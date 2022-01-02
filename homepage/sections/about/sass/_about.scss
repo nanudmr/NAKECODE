@@ -1,0 +1,116 @@
+// DESKTOP
+
+.about {
+    width: 100%;
+    background-color: $white-2;
+    padding: 96px 0px 64px 0px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.about img[src="./homepage/sections/about/images/moco-verde-2.webp"] {
+    position: absolute;
+    top: 80%;
+    left: -10%;
+    width: 495px;
+    z-index: 0;
+  }
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    @include sectionWidth;
+}
+
+.about-content-left {
+    width: 50%;
+    z-index: 1;
+
+    h2 {
+        @include secondaryTitlesemi;
+        padding-bottom: 24px;
+    }
+
+    p {
+        padding-bottom: 22px;
+    }
+
+    img[src="./homepage/sections/about/images/nakecode-signature.webp"] {
+        max-width: 320px;
+        margin-top: 64px;
+    }
+}
+
+.about-content-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-left: 40px;
+
+
+    .about-image-1 {
+        width: 90%;
+
+        img[src="./homepage/sections/about/images/about-1.webp"] {
+            width: 100%;
+        }
+    }
+
+    .about-image-2{
+        width: 90%;
+        margin-top: -40%;
+        margin-right: 5%;
+
+        img[src="./homepage/sections/about/images/about-2.webp"] {
+            width: 100%;
+        }
+    }
+
+    .about-image-3{
+        width: 90%;
+        margin-top: -40%;
+        margin-right: 10%;
+
+        img[src="./homepage/sections/about/images/about-3.webp"] {
+            width: 100%;
+        }
+    }
+}
+
+// DESKTOP END
+
+// TABLET
+
+@media screen and (max-width:1200px){
+
+    .about-content {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+}
+
+// TABLET END
+
+// MOBILE
+
+@media screen and (max-width:768px){
+
+    .about-content {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .about-content-right{
+        display: none;
+    }
+
+    .about-content-left{
+        width: 100%;
+    }
+    
+}
+
+// MOBILE END
