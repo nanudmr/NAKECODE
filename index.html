@@ -2,38 +2,67 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/splide-3.0.8/dist/css/splide.min.css">
+    <title>Nakecode</title>
+
+    <!-- BOOTSTRAP -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- BOOTSTRAP END -->
 
-    <link rel="icon" type="image/png" href="/imgs/nklogo-sm-grey.webp" />
-    <title>Nakecode.com</title>
+    <!-- SPLIDE -->
+
+    <link rel="stylesheet" href="/Splide/splide-3.6.9/dist/css/splide.min.css">
+
+    <!-- SPLIDE END -->
+
+    <!-- STYLESHEET -->
+
+    <link rel="stylesheet" href="/homepage/homepage.css">
+
+    <!-- STYLESHEET END -->
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONTS END -->
+
+    <!-- FAVICON -->
+
+    <link rel="icon" type="image/png" href="./homepage/global/header/images/nk-favicon.webp" />
+
+    <!-- FAVICON END -->
+
 </head>
 
 <body>
+
+    <!-- HEADER -->
 
     <header>
 
         <nav>
 
-            <div class="navContent">
+            <div class="nav-content">
 
-                <div class="logo"><a href="index.html"><img src="./imgs/nklogo-sm-grey.webp"
-                            alt="nakecode logo small"></a></div>
+                <div class="logo">
+                    <a href="index.html"><img src="./homepage/global/header/images/nakecode-logo-header.webp"
+                            alt="Nakecode logo"></a>
+                </div>
 
-                <ul class="menu" id="menu">
-                    <li><a href="#main">Services</a></li>
+                <ul class="menu hide" id="menu">
+                    <hr class="hr-divider">
+                    <li><a href="#services">Services</a></li>
                     <hr>
                     <li><a href="#about">About</a></li>
                     <hr>
@@ -41,29 +70,35 @@
                     <hr>
 
                     <div class="header-btn">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a free proposal</button>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a free
+                            proposal</button>
                     </div>
+
                 </ul>
 
-                <div class="menuOpener" id="openMenu"><img src="/imgs/mobile-img/menu-mob.webp" alt="menu opener"></div>
-
-                <div class="menuCloser" id="closeMenu"><img src="/imgs/mobile-img/menu-mob-close.webp"
-                        alt="menu closer"></div>
-
+                <div class="hamburger" id="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
 
             </div>
 
         </nav>
+
     </header>
 
+    <!-- HEADER END -->
+
+    <!-- MODAL -->
 
     <div class="modal fade myModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Let’s start building your digital business</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Let's start building your digital business</h5>
                     <h4>Get a free proposal</h4>
                 </div>
 
@@ -72,19 +107,25 @@
 
                         <form id="modalContact">
                             <div class="info">
+
                                 <div class="name">
                                     <p>Name:</p>
-                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <input type="text" name="name" placeholder="" required>
                                 </div>
                                 <div class="email">
                                     <p>Email:</p>
-                                    <input type="email" name="email" placeholder="Your e-mail address" required>
+                                    <input type="email" name="email" placeholder="" required>
                                 </div>
+                                <div class="website">
+                                    <p>Current website:</p>
+                                    <input type="text" name="website" placeholder="">
+                                </div>
+
                             </div>
 
                             <div class="message">
                                 <p>Message:</p>
-                                <textarea name="message" rows="2" placeholder="Hello There"></textarea>
+                                <textarea name="message" rows="2" placeholder=""></textarea>
                             </div>
 
                             <div class="sendBtn">
@@ -95,16 +136,17 @@
                 </div>
 
                 <div id="mailSent" class="mailSent">
-                    <img src="/imgs/checkMsg.webp" alt="">
+                    <img src="/homepage/global/header/images/CheckCircle.webp" alt="">
                     <p>Your message has been sent</p>
                 </div>
+
                 <div class="modal-footer">
-                    <div class="info">
-                        <img src="/imgs/envelope.webp" alt="">
+                    <div class="our-info">
+                        <img src="./homepage/global/header/images/Envelope.webp" alt="">
                         <p>info@nakecode.com</p>
                     </div>
-                    <div class="info">
-                        <img src="/imgs/whatsappLogo.webp" alt="">
+                    <div class="our-info">
+                        <img src="./homepage/global/header/images/WhatsappLogo.webp" alt="">
                         <p>+351 919 630 310</p>
                     </div>
                 </div>
@@ -112,383 +154,453 @@
         </div>
     </div>
 
+    <!-- MODAL END -->
+
+    <!-- HEROBOX -->
 
     <div class="herobox">
 
-        <div class="innerhero">
-            <div class="heroContent">
-                <h1 id="intro">Take your Business to the Next Level</h1>
-                <p>Choose Nakecode as your digital marketing agency and take your business to a new level with our digital marketing services and technology platform. We specialize in UI/UX design, web-app development, e-commerce, Search Engine Optimization, and content creation.
+        <img id="moco-verde-1" data-speed="1.02" src="./homepage/sections/herobox/images/moco-verde-1.webp" alt="">
+
+        <div class="herobox-content">
+
+            <div class="herobox-content-left">
+                <h1>Take your business to the next level</h1>
+                <p>Choose Nakecode as your digital marketing agency and take your business to a new level with our
+                    digital marketing services and technology platform. We specialize in UI/UX design, web-app
+                    development, e-commerce, Search Engine Optimization, and content creation.</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a free
+                    proposal
+                </button>
+            </div>
+
+            <div class="herobox-content-right">
+                <div class="herobox-image-1" data-speed="1.04">
+                    <img src="./homepage/sections/herobox/images/laptop.webp" alt="">
+                </div>
+                <div class="herobox-image-2" data-speed="1.08">
+                    <img src="./homepage/sections/herobox/images/phone.webp" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- END HEROBOX -->
+
+    <!-- SERVICES -->
+
+    <div id="services" class="services">
+
+        <div class="services-content">
+
+            <h2>Turn your ideas into a successful online business</h2>
+
+            <div class="services-cards">
+
+                <div class="services-card-1">
+                    <img src="./homepage/sections/services/images/ui-ux-design.webp" alt="">
+                    <h3>UI & UX Design</h3>
+                    <h4>User Experience / User Interface Design</h4>
+                    <p>User Interface and User Experience Design that turns your website into a masterpiece. A
+                        professional design is crucial in converting visitors to customers. First impressions are
+                        lasting impressions.</p>
+                </div>
+
+                <div class="services-card-2">
+                    <img src="./homepage/sections/services/images/web-app-development.webp" alt="">
+                    <h3>Web-App Development</h3>
+                    <h4>Front End / Back End Web Development</h4>
+                    <p>We offer a vast range of development solutions. Depending on the scale and expected growth of
+                        your
+                        business, we are able to develop the perfect solution for your business.</p>
+                </div>
+
+                <div class="services-card-3">
+                    <img src="./homepage/sections/services/images/seo-marketing.webp" alt="">
+                    <h3>SEO & SEM</h3>
+                    <h4>Search Engine Optimization / Marketing</h4>
+                    <p>Our SEO specialists are ready to craft a custom SEO strategy for your business. Get ready to see
+                        your
+                        website appear at the top of Google's search results and grow your visitors exponentially.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- END SERVICES -->
+
+    <!-- ABOUT -->
+
+    <div id="about" class="about">
+
+        <img id="moco-verde-2" data-speed="1.02" src="./homepage/sections/about/images/moco-verde-2.webp" alt="">
+
+        <div class="about-content">
+
+            <div class="about-content-left">
+                <h2>Nakecode</h2>
+
+                <p>We are a team of professionals dedicated to create, design, develop, and optimize e-commerce and web
+                    applications. We are Passionate about the infinite digital world and its many different ways to
+                    solve and automate day-to-day challenges.</p>
+
+                <p>Our web-app development, marketing, and design knowledge is an all-in-one solution to make your
+                    business succeed in the digital era.</p>
+
+                <p>At Nakecode, communication is a top priority. Our services are intended to be developed with our
+                    clients, making them integral to the whole design and development process. Together, we'll find the
+                    best possible solution for your business needs.
                 </p>
 
-                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a free proposal</button>
+                <img src="./homepage/sections/about/images/nakecode-signature.webp" alt="">
             </div>
 
-            <div class="heroImg">
-                <div class="laptop">
-                    <img src="/imgs/herobox-imgs/macbookpro.webp" alt="">
-                </div>
+            <div class="about-content-right">
 
-                <div class="phone">
-                    <img src="/imgs/herobox-imgs/iPhone12Pro.webp" alt="">
-                </div>
-            </div>
+                <div class="about-image-1"><img src="./homepage/sections/about/images/about-1.webp" alt=""></div>
 
+                <div class="about-image-2"><img src="./homepage/sections/about/images/about-2.webp" alt=""></div>
 
-        </div>
-
-
-
-
-    </div>
-
-    <main id="main">
-
-        <h2>Turn your idea into a successful online business.</h2>
-
-        <div class="services">
-            <div class="service">
-                <img src="./imgs/webDes.webp" alt="">
-                <h3>UI & UX Design</h3>
-                <p class="small">User Experience / User Interface Design</p>
-                <p>User Interface and User Experience Design that will turn your website into a masterpiece. A professional design is a key feature to turn every visitor into a potential customer.</p>
-            </div>
-
-            <div class="service">
-                <img src="./imgs/webDev.webp" alt="">
-                <h3>Web-App Development</h3>
-                <p class="small">Front End / Back End Web Development</p>
-                <p>We offer a vast range of development solutions. Depending on the scale and expected growth of your business, we are able to develop the perfect solution for your business.</p>
-            </div>
-
-            <div class="service">
-                <img src="/imgs/seoSem.webp" alt="">
-                <h3>SEO</h3>
-                <p class="small">Search Engine Optimization / Marketing</p>
-                <p>Our SEO specialists are ready to craft a custom SEO strategy for your business. Get ready to see your website appear at the top of Google's search results and grow your visitors exponentially.</p>
-
-            </div>
-        </div>
-    </main>
-
-
-    <div id="about" class="aboutUs">
-        <div class="aboutContent">
-            <div class="aboutText">
-                <h1>Nakecode</h1>
-                <p>We are a team of freelancers dedicated to create, design, develop, and optimize e-commerce and web applications. Passionate about the infinite digital world and its many different ways to solve and automate day-to-day challenges.</p>
-
-                <p>Our web-app development, marketing, and design knowledge is an all-in-one solution to make your business succeed in the digital era.</p>
-
-                <p>At nakecode, communication is a top priority. The services we provide are intended to be developed with our clients, giving our clients a chance to be part of the whole design and development process. Only through great communication and teamwork, we will achieve the best possible outcome.</p>
-            </div>
-            <div class="midImg">
-                <div class="primeraImg">
-                    <img src="/imgs/designAbout.webp" alt="">
-                </div>
-                <div class="segundaImg">
-                    <img src="/imgs/codeAbout.webp" alt="">
-                </div>
-
-                <div class="terceraImg">
-                    <img src="/imgs/getReadyAbout.webp" alt="">
-                </div>
+                <div class="about-image-3"><img src="./homepage/sections/about/images/about-3.webp" alt=""></div>
 
             </div>
 
         </div>
     </div>
+
+    <!-- END ABOUT -->
+
+    <!-- PORTFOLIO -->
 
     <div id="portfolio" class="portfolio">
-        <div class="portfolioContent">
+
+        <div class="portfolio-content">
+
             <h4>Your projects, our portfolio</h4>
+
             <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img src="/imgs/projects/restires.webp" alt="">
+                        <li class="splide__slide"><img src="./homepage/sections/portfolio/images/vei.webp" alt=""></li>
+                        <li class="splide__slide"><img src="./homepage/sections/portfolio/images/caamtech.webp" alt="">
                         </li>
-                        <li class="splide__slide"><img src="/imgs/projects/veiCenter.webp" alt=""></li>
-                        <li class="splide__slide"><img src="/imgs/projects/caamtech.webp" alt=""></li>
-                        <li class="splide__slide"><img src="/imgs/projects/bemoving.webp" alt=""></li>
+                        <li class="splide__slide"><img src="./homepage/sections/portfolio/images/bemoving.webp" alt="">
+                        </li>
+                        <li class="splide__slide"><img src="./homepage/sections/portfolio/images/restires.webp" alt="">
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-
-    <div class="faqSection">
-
-        <div class="faqContent">
-
-            <h5>Frequently Asked Questions</h5>
-
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-
-                <div class="faq1">
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingOne">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                <p>How long does it take to create a website?</p>
-                            </button>
-
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">Delivery times are generally between one to three months, depending on the complexity and size of the website.</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingTwo">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                <p>How much does it cost to create a website?</p>
-                            </button>
-
-                        </h2>
-
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">At Nakecode, we consider that each project is unique. That's why we carry out a free personalized study to advise our clients first. The price will vary depending on the website's complexity.</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingThree">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                <p>What is SEO, and how does it affect my website?</p>
-                            </button>
-
-                        </h2>
-
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">SEO stands for "Search Engine Optimization." In simple terms, it refers to the different configurations and content that a page must have to be relevant to search engines like Google to appear in the top positions.</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingFour">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                                <p>What is SEM?</p>
-                            </button>
-
-                        </h2>
-
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">SEM, or "Search Engine Marketing," is a paid system provided by different platforms to place ads on their application/website.</div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="faq2">
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingFive">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                aria-controls="flush-collapseFive">
-                                <p>Does nakecode redesign websites?</p>
-                            </button>
-
-                        </h2>
-
-                        <div id="flush-collapseFive" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">Yes, we can redesign any website. Our designs are generally built from zero. After the first meeting, we will present a design proposal, and from there, we will wait for your feedback to achieve the perfect design for your new website.</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingSix">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseSix" aria-expanded="false"
-                                aria-controls="flush-collapseSix">
-                                <p>Do websites need maintenance?</p>
-                            </button>
-
-                        </h2>
-
-                        <div id="flush-collapseSix" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">It depends on the type of website, but generally, it's a good idea to have a specialist take care of the maintenance of your website. If it is a WordPress site, it will require updating plugins and checking for incompatibilities as the plugins update.</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingSeven">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                                aria-controls="flush-collapseSeven">
-                                <p>Why choose Nakecode?</p>
-                            </button>
-
-                        </h2>
-
-                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">At Nakecode, our priority is creating masterpiece websites that are profitable investments for our clients. We have the best customer service, where you can always follow up on your project and be part of it. The client is the main focus of our business; a happy customer is the best marketing.</div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="flush-headingEight">
-
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseEight" aria-expanded="false"
-                                aria-controls="flush-collapseEight">
-                                <p>What is a website analysis?</p>
-                            </button>
-
-                        </h2>
-
-                        <div id="flush-collapseEight" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">A website analysis is a multistep process to understand the work needed to make your website the best option in your business sector. We use tools such as <a href="https://ahrefs.com/">Ahrefs</a>, <a href="https://www.semrush.com/">Semrush</a>, <a href="https://mangools.com/">Mangools</a>, <a href="https://pagespeed.web.dev/">Google Site Speed</a> , and <a href="https://gtmetrix.com/">GTmetrix</a> to analyze your actual website, your targeted market, and your competition to create a detailed report for you.</div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
 
         </div>
 
     </div>
 
-    <div class="finalbg">
+    <!-- END PORTFOLIO -->
 
-        <div class="contactUs">
-            <h5>Let's start building your digital business</h5>
-            <h4>Get a free proposal</h4>
+    <!-- FAQ -->
 
+    <div class="faq">
 
-            <div class="contactUsContent">
+        <img id="moco-verde-3" data-speed="1.02" src="./homepage/sections/faq/images/moco-verde-3.webp" alt="">
 
-                <div id="formFooter" class="form">
+        <div class="faq-content">
 
-                    <form class="add">
-                        <div class="info">
-                            <div class="name">
-                                <p>Name:</p>
-                                <input type="text" name="name" placeholder="Your Name" required>
+            <h4>Frequently Asked Questions</h4>
+
+            <div class="faq-accordions">
+
+                <!-- ACCORDION LEFT -->
+
+                <div class="faq-accordion-left">
+
+                    <div class="accordion accordion-flush" id="accordionLeft">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How long does it take to create a website?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionLeft">
+                                <div class="accordion-body">
+                                    Delivery times are generally between one to three months, depending on the
+                                    complexity and size of the website.
+                                </div>
                             </div>
-                            <div class="email">
-                                <p>Email:</p>
-                                <input type="email" name="email" placeholder="Your e-mail address" required>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How much does it cost to create a website?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionLeft">
+                                <div class="accordion-body">
+                                    At Nakecode, we believe each project is unique. That's why we perform a free
+                                    personalized study to advise our clients first. The price will vary depending on the
+                                    website's complexity.
+                                </div>
                             </div>
                         </div>
 
-                        <div class="message">
-                            <p>Message:</p>
-                            <textarea name="message" rows="2" placeholder="Hello There"></textarea>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is SEO, and how does it affect my website?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionLeft">
+                                <div class="accordion-body">
+                                    SEO stands for "Search Engine Optimization." In simple terms, it refers to the
+                                    different configurations and content that must be embedded in website pages for
+                                    search engines like Google to rank them at the top of search results.
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="sendBtn">
-                            <button type="submit" name="submit">Send</button>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What is SEM?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionLeft">
+                                <div class="accordion-body">
+                                    SEM, or "Search Engine Marketing," is a paid system provided by different platforms
+                                    to place ads on their application/website.
+                                </div>
+                            </div>
                         </div>
-                    </form>
+
+                    </div>
 
                 </div>
 
-                <div id="mailSentFooter" class="mailSentFooter">
-                    <img src="/imgs/checkMsg.webp" alt="">
-                    <p>Your message has been sent</p>
-                </div>
+                <!-- ACCORDION LEFT END -->
 
+                <!-- ACCORDION RIGHT -->
+
+                <div class="faq-accordion-right">
+
+                    <div class="accordion accordion-flush" id="accordionRight">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Does nakecode redesign websites?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionRight">
+                                <div class="accordion-body">
+                                    Yes, we can redesign any website. Our designs are generally built from zero. After
+                                    the first meeting, we will present a design proposal, and from there, we will wait
+                                    for your feedback to achieve the perfect design for your new website.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Do websites need maintenance?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionRight">
+                                <div class="accordion-body">
+                                    It depends on the type of website, but generally, it's a good idea to have a
+                                    specialist take care of the maintenance of your website. If it is a WordPress site,
+                                    it will require updating plugins and checking for incompatibilities as the plugins
+                                    update.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Why choose Nakecode?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionRight">
+                                <div class="accordion-body">
+                                    Nakecode's priority is creating masterpiece websites that are profitable investments
+                                    for our clients. With customer service that is second to none, clients' needs are
+                                    the focus of our business. Creating happy customers is the best marketing strategy.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    What is a website analysis?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionRight">
+                                <div class="accordion-body">
+                                    A website analysis is a multistep process to understand the work needed to make your
+                                    website the best option in your business sector. We use tools such as Ahrefs,
+                                    Semrush, Mangools, Google site speed, and GTmetrix to analyze your current website,
+                                    your targeted market, and your competition to create a detailed report for you.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
+
         </div>
 
-        <footer>
-            <div class="footerContent">
-                <div class="info">
-                    <img src="/imgs/envelope.webp" alt="">
+    </div>
+
+    <!-- ACCORDION RIGHT END -->
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact">
+
+        <img id="moco-verde-4" data-speed="1.02" src="./homepage/sections/contact/images/moco-verde-4.webp" alt="">
+        <img id="moco-verde-5" data-speed="1.02" src="./homepage/sections/contact/images/moco-verde-5.webp" alt="">
+        <img id="astronaut" data-speed="1" src="./homepage/sections/contact/images/astronaut.webp" alt="">
+
+        <div class="contact-content">
+
+            <h3>Let's start building your digital business</h3>
+            <h4>get a free proposal</h4>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-fields">
+                    <div class="form-flex">
+                        <div class="name">
+                            <p>Name:</p>
+                            <input type="text" name="name" placeholder="" required>
+                        </div>
+
+                        <div class="email">
+                            <p>Email:</p>
+                            <input type="email" name="email" placeholder="" required>
+                        </div>
+                    </div>
+
+                    <div class="website">
+                        <p>Current website:</p>
+                        <input type="text" name="website" placeholder="">
+                    </div>
+
+                    <div class="message">
+                        <p>Message:</p>
+                        <textarea name="message" rows="2" placeholder=""></textarea>
+                    </div>
+
+                </div>
+
+                <div class="send-btn">
+                    <button type="submit" name="submit">Send</button>
+                </div>
+
+            </form>
+
+            <!-- EMAIL SENT -->
+
+            <div id="mailSentForm" class="mailSent">
+                <img src="/homepage/global/header/images/CheckCircle.webp" alt="">
+                <p>Your message has been sent</p>
+            </div>
+
+            <!-- EMAIL SENT END -->
+
+            <div class="contact-info">
+
+                <div class="our-email">
+                    <img src="./homepage/sections/contact/images/Envelope.webp" alt="">
                     <p>info@nakecode.com</p>
                 </div>
-                <div class="info">
-                    <img src="/imgs/whatsappLogo.webp" alt="">
+
+                <div class="our-phone">
+                    <img src="./homepage/sections/contact/images/WhatsappLogo.webp" alt="">
                     <p>+351 919 630 310</p>
                 </div>
+
             </div>
 
-        </footer>
+        </div>
 
     </div>
 
-    <div class="end">
-        <div class="endContent">
+    <!-- CONTACT FORM END -->
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
             <hr>
             <p>© 2021 Nakecode</p>
         </div>
-    </div>
 
+
+    </footer>
+
+    <!-- FOOTER END -->
+
+    <!-- SPLIDE -->
+
+    <script src="/Splide/splide-3.6.9/dist/js/splide.min.js"></script>
+
+    <!-- SPLIDE END -->
+
+    <!-- BOOTSTRAP -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+    <!-- BOOTSTRAP END -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <!-- SCROLLTRIGGER -->
 
-    <script src="/splide-3.0.8/dist/js/splide.min.js"></script>
-    <script src="/bundle.js"></script>
-    <script type="text/javascript" src="/src/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+
+    <!-- SCROLLTRIGGER END -->
+
+    <!-- MY FIREBASE -->
+    <script src="bundle.js"></script>
+
+    <!-- MY FIREBASE END -->
+
+    <!-- MY JS -->
+
+    <script type="text/javascript" src="/javascript/index.js"></script>
+
+    <!-- MY JS END -->
 
 </body>
 

@@ -1,0 +1,74 @@
+// TITLES
+
+@mixin primaryTitle () {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: raleway, sans-serif;
+}
+
+@mixin primaryTitlesemi () {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: raleway, sans-serif;
+}
+
+@mixin secondaryTitle () {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: raleway,sans-serif;
+}
+
+@mixin secondaryTitlesemi () {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: raleway,sans-serif;
+}
+
+@mixin thirdTitle () {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: raleway,sans-serif;
+}
+
+@mixin thirdTitlesemi () {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: raleway,sans-serif;
+}
+
+@mixin fourthTitle () {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: raleway,sans-serif;
+}
+
+@mixin fourthTitlesemi () {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: raleway,sans-serif;
+}
+
+// END TITLES
+
+// PARAGRAPHS
+
+@mixin paragraph () {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: montserrat, sans-serif;
+}
+
+@mixin bigParagraph () {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: montserrat, sans-serif;
+}
+
+@mixin smallParagraph () {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: montserrat, sans-serif;
+}
+
+// END PARAGRAPHS
+

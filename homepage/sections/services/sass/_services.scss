@@ -1,0 +1,119 @@
+// DESKTOP
+
+.services {
+    width: 100%;
+    background-color: $white;
+    padding: 96px 0px 96px 0px;
+}
+
+.services-content{
+    @include sectionWidth;
+    
+    h2 {
+        text-align: center;
+        @include thirdTitle;
+    }
+}
+
+
+.services-cards{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 386px);
+
+    img {
+        max-width: 360px;
+        @include boxShadow;
+    }
+
+    h3 {
+        padding: 32px 0px 12px 0px;
+        @include fourthTitlesemi;
+    }
+
+    h4 {
+        padding-bottom: 24px;
+        @include smallParagraph;
+    }
+}
+
+.services-card-1 {
+    padding-top: 64px;
+    max-width: 360px;
+    
+}
+.services-card-2 {
+    padding-top: 64px;
+    max-width: 360px;
+
+}
+.services-card-3 {
+    padding-top: 64px;
+    max-width: 360px;
+
+}
+
+// DESKTOP END
+
+// TABLET
+
+@media screen and (max-width:1200px){
+
+    .services-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+}
+
+// TABLET END
+
+// MOBILE
+
+@media screen and (max-width:768px){
+
+    .services-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        img {
+            width: 100%;
+            @include boxShadow;
+        }
+    
+        h3 {
+            padding: 32px 0px 12px 0px;
+            @include fourthTitlesemi;
+        }
+    
+        h4 {
+            padding-bottom: 24px;
+            @include smallParagraph;
+        }
+    }
+    
+    .services-card-1 {
+        padding-top: 64px;
+        width: 100%;
+        
+    }
+    .services-card-2 {
+        padding-top: 64px;
+        width: 100%;
+    
+    }
+    .services-card-3 {
+        padding-top: 64px;
+        width: 100%;
+    
+    }
+    
+}
+
+// MOBILE END
+
+
+

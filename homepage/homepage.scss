@@ -1,0 +1,22 @@
+// GLOBAL / IMPORTANT FIRST WHAT YOU NEED IN ORDER TO BUILD (IE: WITHOUT "VARIABLES" FIRST YOU CAN NOT APPLY COLORS ON "FONTS")
+
+@import "./global/resets";
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/fonts";
+@import "./global/footer/sass/footer";
+@import "./global/header/sass/header";
+
+
+// GLOBAL / IMPORTANT FIRST WHAT YOU NEED IN ORDER TO BUILD (IE: WITHOUT "VARIABLES" FIRST YOU CAN NOT APPLY COLORS ON "FONTS")
+
+// PAGE SECTIONS
+
+@import "./sections/herobox/sass/herobox";
+@import "./sections/services/sass/services";
+@import "./sections/about/sass/about";
+@import "./sections/portfolio/sass/portfolio";
+@import "./sections/faq/sass/faq";
+@import "./sections/contact/scss/contact";
+
+// PAGE SECTIONS END

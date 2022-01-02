@@ -1,0 +1,35 @@
+// DESKTOP
+
+footer {
+    background-color: $white-2;
+
+    .footer-content{
+      @include sectionWidth;
+    }
+
+    hr{
+      margin: 0;
+      background-color: $black;
+      width: 100%;
+      height: 2px;
+    }
+    p{
+      padding: 12px 0px 12px 0px;
+    }
+}
+
+// DESKTOP END
+
+// TABLET
+
+@media screen and (max-width:1200px){
+
+  footer{
+    .footer-content {
+      margin-left: 20px;
+      margin-right: 20px;
+      overflow: hidden;
+    }
+  }
+    
+}
