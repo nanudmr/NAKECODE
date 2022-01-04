@@ -22,18 +22,11 @@ function closeMenu(){
 
 // CLOSING MENU ON CLICKS
 
-const menuServices = document.getElementById("menuServices")
-
-const menuAbout = document.getElementById("menuAbout")
-
-const menuPortfolio = document.getElementById("menuPortfolio")
-
-menuServices.addEventListener("click", () => closeMenu())
-
-menuAbout.addEventListener("click", () => closeMenu())
-
-menuPortfolio.addEventListener("click", () => closeMenu())
-
+menu.addEventListener("click", function(e){
+  if(e.target.matches("a")){
+    closeMenu()
+  }
+})
 
 // NAVBAR END
 
