@@ -9,14 +9,31 @@ const line3 = document.querySelector(".line3")
 const menu = document.getElementById("menu")
 
 
-openNav.addEventListener("click", () => {
+openNav.addEventListener("click", () => closeMenu())
 
+function closeMenu(){
   menu.classList.toggle("hide")
 
   line1.classList.toggle("line1Close")
   line2.classList.toggle("line2Close")
   line3.classList.toggle("line3Close")
-})
+}
+
+
+// CLOSING MENU ON CLICKS
+
+const menuServices = document.getElementById("menuServices")
+
+const menuAbout = document.getElementById("menuAbout")
+
+const menuPortfolio = document.getElementById("menuPortfolio")
+
+menuServices.addEventListener("click", () => closeMenu())
+
+menuAbout.addEventListener("click", () => closeMenu())
+
+menuPortfolio.addEventListener("click", () => closeMenu())
+
 
 // NAVBAR END
 
