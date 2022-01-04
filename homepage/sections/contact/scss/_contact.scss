@@ -1,7 +1,7 @@
 // DESKTOP
 
 .contact{
-    padding: 64px 0px 96px 0px;
+    padding: 64px 0px 64px 0px;
     background-color: $white-2;
     position: relative;
     overflow: hidden;
@@ -66,10 +66,12 @@
             font-weight: 400;
             border-radius: 4px;
             width: 100%;
+            transition: ease 0.75s;
         }
 
         button:hover{
             background-color: $purple;
+            transition: ease 0.25s;
         }
     }
 
@@ -230,7 +232,7 @@
             display: block;
             position: absolute;
             transform: scaleX(-1) !important;
-            top: 75%;
+            top: 78%;
             left: 70%;
             width: 100px;
             z-index: 0;

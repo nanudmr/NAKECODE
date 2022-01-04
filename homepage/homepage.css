@@ -523,10 +523,14 @@ nav hr {
   font-size: 16px;
   font-weight: 400;
   border-radius: 4px;
+  -webkit-transition: ease 0.75s;
+  transition: ease 0.75s;
 }
 
 .herobox-content-left button:hover {
   background-color: #6000FF;
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
 }
 
 .herobox-content-right {
@@ -980,7 +984,7 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
 }
 
 .contact {
-  padding: 64px 0px 96px 0px;
+  padding: 64px 0px 64px 0px;
   background-color: #FAFAFA;
   position: relative;
   overflow: hidden;
@@ -1052,10 +1056,14 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
   font-weight: 400;
   border-radius: 4px;
   width: 100%;
+  -webkit-transition: ease 0.75s;
+  transition: ease 0.75s;
 }
 
 .contact-content .contact-form button:hover {
   background-color: #6000FF;
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
 }
 
 .contact-content .form-fields {
@@ -1212,7 +1220,7 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
     position: absolute;
     -webkit-transform: scaleX(-1) !important;
             transform: scaleX(-1) !important;
-    top: 75%;
+    top: 78%;
     left: 70%;
     width: 100px;
     z-index: 0;

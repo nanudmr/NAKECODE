@@ -53,9 +53,11 @@
     font-size: 16px;
     font-weight: 400;
     border-radius: 4px;
+    transition: ease 0.75s;
   }
   button:hover{
     background-color: $purple;
+    transition: ease 0.25s;
   }
 }
   
