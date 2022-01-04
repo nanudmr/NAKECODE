@@ -23,9 +23,10 @@ function closeMenu(){
 // CLOSING MENU ON CLICKS
 
 menu.addEventListener("click", function(e){
-  if(e.target.matches("a") || e.target.matches("button")){
+  if(e.target = ("a") || e.target.matches("button")){
     closeMenu()
   }
+  // Ejemplo de uso de target = y target.matches
 })
 
 // NAVBAR END
