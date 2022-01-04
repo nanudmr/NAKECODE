@@ -23,7 +23,7 @@ function closeMenu(){
 // CLOSING MENU ON CLICKS
 
 menu.addEventListener("click", function(e){
-  if(e.target.matches("a")){
+  if(e.target.matches("a") || e.target.matches("button")){
     closeMenu()
   }
 })
