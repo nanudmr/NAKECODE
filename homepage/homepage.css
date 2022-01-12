@@ -1174,6 +1174,7 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
 
 .mailSent {
   display: none;
+  height: 355px;
   padding-top: 64px;
   padding-bottom: 64px;
 }
@@ -1246,6 +1247,12 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .mailSent {
+    display: none;
+    height: 440px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 /*# sourceMappingURL=homepage.css.map */

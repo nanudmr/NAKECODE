@@ -171,6 +171,7 @@
 
 .mailSent{
     display: none;
+    height: 355px;
     padding-top: 64px;
     padding-bottom: 64px;
 
@@ -258,6 +259,13 @@
         flex-direction: column;
         gap: 16px;
         align-items:flex-start;
+    }
+
+    .mailSent{
+        display: none;
+        height: 440px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
 
 }
