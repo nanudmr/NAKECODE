@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app"
 
 import {
-    getFirestore, collection, addDoc, documentId
+    getFirestore, collection, addDoc
 } from "firebase/firestore"
 
 const firebaseConfig = {
@@ -44,7 +44,11 @@ addModal.addEventListener("submit", (e) => {
         to: "info@nakecode.com",
         message: {
             subject: "new contact request nakecode.com",
-            html: `name: ${addModal.name.value} email: ${addModal.email.value} currentWeb: ${addModal.website.value} message:${addModal.message.value}`
+            html: 
+            `Name: ${addModal.name.value}
+            Email: ${addModal.email.value}
+            Current Website: ${addModal.website.value} 
+            Message:${addModal.message.value}`
         }
         
     })
@@ -58,7 +62,6 @@ addModal.addEventListener("submit", (e) => {
 
 const contactForm = document.getElementById("contactForm")
 const mailSentContactForm = document.getElementById("mailSentForm")
-
 
 
 function emailSentFooter(){
