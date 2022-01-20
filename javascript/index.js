@@ -2,9 +2,7 @@
 
 const openNav = document.getElementById("hamburger")
 
-const line1 = document.querySelector(".line1")
-const line2 = document.querySelector(".line2")
-const line3 = document.querySelector(".line3")
+const lines = document.querySelectorAll(".hamburger div")
 
 const menu = document.getElementById("menu")
 
@@ -13,16 +11,15 @@ openNav.addEventListener("click", () => closeMenu())
 
 function closeMenu(){
   menu.classList.toggle("hide")
-
-  line1.classList.toggle("line1Close")
-  line2.classList.toggle("line2Close")
-  line3.classList.toggle("line3Close")
+  lines[0].classList.toggle("line1Close")
+  lines[1].classList.toggle("line2Close")
+  lines[2].classList.toggle("line3Close")
 }
 
 
 // CLOSING MENU ON CLICKS
 
-menu.addEventListener("click", function(e){
+menu.addEventListener("click", (e) => {
   if(e.target = ("a") || e.target.matches("button")){
     closeMenu()
   }
