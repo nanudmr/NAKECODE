@@ -79,9 +79,9 @@ addContact.addEventListener("submit", (e) => {
             subject: "new contact request nakecode.com",
             html:
             `name: ${addContact.name.value}
-            mail:${addContact.email.value}
-            currentWeb:${addContact.website.value} 
-            message:${addContact.message.value}`
+            mail: ${addContact.email.value}
+            currentWeb: ${addContact.website.value} 
+            message: ${addContact.message.value}`
         }
     })
     .then(() => {
