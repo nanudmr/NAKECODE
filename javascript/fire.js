@@ -45,10 +45,10 @@ addModal.addEventListener("submit", (e) => {
         message: {
             subject: "new contact request nakecode.com",
             html: 
-            `Name: ${addModal.name.value}
-            Email: ${addModal.email.value}
-            Current Website: ${addModal.website.value} 
-            Message:${addModal.message.value}`
+            `name: ${addModal.name.value}
+            mail: ${addModal.email.value}
+            currentWeb: ${addModal.website.value} 
+            message: ${addModal.message.value}`
         }
         
     })
@@ -59,7 +59,6 @@ addModal.addEventListener("submit", (e) => {
 })
 
 // CONTACT FORM
-
 const contactForm = document.getElementById("contactForm")
 const mailSentContactForm = document.getElementById("mailSentForm")
 
@@ -78,7 +77,11 @@ addContact.addEventListener("submit", (e) => {
         to: "info@nakecode.com",
         message: {
             subject: "new contact request nakecode.com",
-            html: `name: ${addContact.name.value} email:${addContact.email.value} currentWeb:${addContact.website.value} message:${addContact.message.value}`
+            html:
+            `name: ${addContact.name.value}
+            mail:${addContact.email.value}
+            currentWeb:${addContact.website.value} 
+            message:${addContact.message.value}`
         }
     })
     .then(() => {
