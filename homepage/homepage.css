@@ -1222,13 +1222,13 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
 }
 
 @media screen and (max-width: 768px) {
-  .contact img[src="./homepage/sections/contact/images/moco-verde-4.webp"] {
+  .contact img[src="./homepage/sections/contact/images/moco-verde-4.png"] {
     display: none;
   }
-  .contact img[src="./homepage/sections/contact/images/moco-verde-5.webp"] {
+  .contact img[src="./homepage/sections/contact/images/moco-verde-5.png"] {
     display: none;
   }
-  .contact img[src="./homepage/sections/contact/images/astronaut.webp"] {
+  .contact img[src="./homepage/sections/contact/images/astronaut.png"] {
     display: block;
     position: absolute;
     -webkit-transform: scaleX(-1) !important;
