@@ -990,7 +990,7 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
   overflow: hidden;
 }
 
-.contact img[src="./homepage/sections/contacto/images/moco-verde-41.png"] {
+.contact img[src="./homepage/sections/contacto/images/moco-verde-4.webp"] {
   position: absolute;
   top: 50%;
   left: -15%;
@@ -998,7 +998,7 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
   z-index: 0;
 }
 
-.contact img[src="./homepage/sections/contacto/images/moco-verde-51.png"] {
+.contact img[src="./homepage/sections/contacto/images/moco-verde-5.webp"] {
   position: absolute;
   top: 20%;
   left: 80%;
@@ -1006,7 +1006,7 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
   z-index: 0;
 }
 
-.contact img[src="./homepage/sections/contacto/images/astronaut1.png"] {
+.contact img[src="./homepage/sections/contacto/images/astronaut.webp"] {
   -webkit-transform: scaleX(1) !important;
           transform: scaleX(1) !important;
   position: absolute;
@@ -1222,13 +1222,13 @@ img[src="./homepage/sections/faq/images/moco-verde-3.webp"] {
 }
 
 @media screen and (max-width: 768px) {
-  .contact img[src="./homepage/sections/contacto/images/moco-verde-41.png"] {
+  .contact img[src="./homepage/sections/contacto/images/moco-verde-4.webp"] {
     display: none;
   }
-  .contact img[src="./homepage/sections/contacto/images/moco-verde-51.png"] {
+  .contact img[src="./homepage/sections/contacto/images/moco-verde-5.webp"] {
     display: none;
   }
-  .contact img[src="./homepage/sections/contacto/images/astronaut1.png"] {
+  .contact img[src="./homepage/sections/contacto/images/astronaut.webp"] {
     display: block;
     position: absolute;
     -webkit-transform: scaleX(-1) !important;
