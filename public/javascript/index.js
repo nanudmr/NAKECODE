@@ -1,11 +1,7 @@
 // NAVBAR
-
 const openNav = document.getElementById("hamburger")
-
 const lines = document.querySelectorAll(".hamburger div")
-
 const menu = document.getElementById("menu")
-
 
 openNav.addEventListener("click", () => closeMenu())
 
@@ -18,7 +14,6 @@ function closeMenu(){
 
 
 // CLOSING MENU ON CLICKS
-
 menu.addEventListener("click", (e) => {
   if(e.target = ("a") || e.target.matches("button")){
     closeMenu()
@@ -29,7 +24,6 @@ menu.addEventListener("click", (e) => {
 // NAVBAR END
 
 // PORTFOLIO SPLIDE
-
 var splide = new Splide( '.splide', {
     perPage: 4,
     breakpoints: {
@@ -70,7 +64,6 @@ var splide = new Splide( '.splide', {
 // });
 
 // HEROBOX ANIMATION
-
 gsap.to("#moco-verde-1", {
   y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window) ,
   // ease: "none",
@@ -105,7 +98,6 @@ gsap.to(".herobox-image-2", {
 });
 
 // SERVICES ANIMATION
-
 const servicesAnim1 = gsap.fromTo(".services-card-1 img", {autoAlpha: 0, y:48}, {duration: 1, autoAlpha: 1, y:0});
   ScrollTrigger.create({
     trigger: ".services-card-1 img",
@@ -175,7 +167,6 @@ gsap.to("#moco-verde-2", {
 });
 
 // FAQ ANIMATION
-
 gsap.to("#moco-verde-3", {
   y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window) ,
 
@@ -189,7 +180,6 @@ gsap.to("#moco-verde-3", {
 });
 
 // CONTACT ANIMATION
-
 gsap.to("#moco-verde-4", {
   y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window) ,
 
@@ -227,4 +217,46 @@ gsap.to("#astronaut", {
 });
 
 // SCROLLTRIGGER ANIMATIONS END
+
+
+
+// MAIL MODAL
+
+const modalMail = document.getElementById("modalMail")
+const mailSent = document.getElementById("mailSent")
+const addModal = document.getElementById("modalContact")
+
+const modalSender = addModal.email.value
+const modalMessage = `name: ${addModal.name.value}
+mail: ${addModal.email.value}
+currentWeb: ${addModal.website.value} 
+message: ${addModal.message.value}`
+
+
+function emailSent(){
+  modalMail.style.display = "none"
+  mailSent.style.display = "block"
+}
+
+
+addModal.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  Email.send({
+    SecureToken : "40f48056-b150-46f4-b696-be95781db59e",
+    To : 'nakecode2022@gmail.com',
+    From : modalSender,
+    Subject : "new email from nakecode.com",
+    Body : modalMessage,
+  }).then(
+    console.log("message sent"),
+    emailSent()
+  ).catch((err) => {
+      console.log(err)
+  })
+
+})
+
+
+
 
