@@ -1,21 +1,21 @@
-import { initializeApp } from "firebase/app"
+// import { initializeApp } from "firebase/app"
 
-import {
-    getFirestore, collection, addDoc
-} from "firebase/firestore"
+// import {
+//     getFirestore, collection, addDoc
+// } from "firebase/firestore"
 
-const firebaseConfig = {
-    apiKey: "AIzaSyA_1tEzVUtxYaRfvDpwVRQQSVuaVtTG7f8",
-    authDomain: "nakecodev2.firebaseapp.com",
-    projectId: "nakecodev2",
-    storageBucket: "nakecodev2.appspot.com",
-    messagingSenderId: "1030841114629",
-    appId: "1:1030841114629:web:6eb21bf9af852c309efc6c"
-  };
+// const firebaseConfig = {
+//     apiKey: "AIzaSyA_1tEzVUtxYaRfvDpwVRQQSVuaVtTG7f8",
+//     authDomain: "nakecodev2.firebaseapp.com",
+//     projectId: "nakecodev2",
+//     storageBucket: "nakecodev2.appspot.com",
+//     messagingSenderId: "1030841114629",
+//     appId: "1:1030841114629:web:6eb21bf9af852c309efc6c"
+//   };
 
 
-// init firebase app
-initializeApp(firebaseConfig)
+// // init firebase app
+// initializeApp(firebaseConfig)
 
 // // init services
 // const db = getFirestore()
