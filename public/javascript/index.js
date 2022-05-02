@@ -239,9 +239,9 @@ function emailSent(){
 addModal.addEventListener("submit", (e) => {
   e.preventDefault()
 
-  const modalMessage = `Name: ${addModal.name.value}
-  Mail: ${addModal.email.value}
-  CurrentWeb: ${addModal.website.value} 
+  const modalMessage = `Name: ${addModal.name.value} <br>
+  Mail: ${addModal.email.value} <br>
+  Current website: ${addModal.website.value} <br>
   Message: ${addModal.message.value}`
 
   console.log(modalMessage)
