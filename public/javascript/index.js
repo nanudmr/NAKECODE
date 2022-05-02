@@ -226,41 +226,64 @@ const modalMail = document.getElementById("modalMail")
 const mailSent = document.getElementById("mailSent")
 const addModal = document.getElementById("modalContact")
 
-const modalSender = addModal.email.value
-
-
-
-function emailSent(){
+function modalSent(){
   modalMail.style.display = "none"
   mailSent.style.display = "block"
 }
 
+// tiene que correr despues de el link JSmail
+setTimeout(() => {
+  emailjs.init("tBXBXWfxsqMqZYmOg");
+}, 500)
 
 addModal.addEventListener("submit", (e) => {
   e.preventDefault()
 
-  const modalMessage = `Name: ${addModal.name.value} <br>
-  Mail: ${addModal.email.value} <br>
-  Current website: ${addModal.website.value} <br>
-  Message: ${addModal.message.value}`
+  const modalData = {
+    name: addModal.name.value,
+    email: addModal.email.value,
+    website: addModal.website.value,
+    message: addModal.message.value
+  }
 
-  console.log(modalMessage)
-
-
-  Email.send({
-    SecureToken : "40f48056-b150-46f4-b696-be95781db59e",
-    To : 'nakecode2022@gmail.com',
-    From : "nakecode2022@gmail.com",
-    Subject : "new email from nakecode.com",
-    Body : modalMessage,
-}).then(
-    console.log("message sent")
-).catch((err) => {
-    console.log(err)
-    })
+  emailjs.send("service_is7siqj", "template_ntqf91l", modalData)
+  .then((res) => {
+      console.log("SUCCESS", res.status, res.text),
+      modalSent()
+  }).catch((err) => {
+      console.log(err)
+  })
 
 })
 
 
+// CONTACT FORM
+const contactForm = document.getElementById("contactForm")
+const mailSentContactForm = document.getElementById("mailSentForm")
+
+
+function emailSentFooter(){
+    contactForm.style.display = "none"
+    mailSentContactForm.style.display = "block"
+}
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const contactFormData = {
+    name: contactForm.name.value,
+    email: contactForm.email.value,
+    website: contactForm.website.value,
+    message: contactForm.message.value
+  }
+
+  emailjs.send("service_is7siqj", "template_ntqf91l", contactFormData)
+  .then((res) => {
+      console.log("SUCCESS", res.status, res.text),
+      emailSentFooter()
+  }).catch((err) => {
+      console.log(err)
+  })
+})
 
 
