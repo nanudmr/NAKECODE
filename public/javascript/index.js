@@ -227,10 +227,7 @@ const mailSent = document.getElementById("mailSent")
 const addModal = document.getElementById("modalContact")
 
 const modalSender = addModal.email.value
-const modalMessage = `name: ${addModal.name.value}
-mail: ${addModal.email.value}
-currentWeb: ${addModal.website.value} 
-message: ${addModal.message.value}`
+
 
 
 function emailSent(){
@@ -242,18 +239,25 @@ function emailSent(){
 addModal.addEventListener("submit", (e) => {
   e.preventDefault()
 
+  const modalMessage = `Name: ${addModal.name.value}
+  Mail: ${addModal.email.value}
+  CurrentWeb: ${addModal.website.value} 
+  Message: ${addModal.message.value}`
+
+  console.log(modalMessage)
+
+
   Email.send({
     SecureToken : "40f48056-b150-46f4-b696-be95781db59e",
     To : 'nakecode2022@gmail.com',
-    From : modalSender,
+    From : "nakecode2022@gmail.com",
     Subject : "new email from nakecode.com",
     Body : modalMessage,
-  }).then(
-    console.log("message sent"),
-    emailSent()
-  ).catch((err) => {
-      console.log(err)
-  })
+}).then(
+    console.log("message sent")
+).catch((err) => {
+    console.log(err)
+    })
 
 })
 
